@@ -1,0 +1,55 @@
+.restaurant-list {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-left: 50px;
+}
+
+.resto-card {
+  cursor: pointer;
+}
+
+.resto-card img {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 300px;
+  margin-right: 40px;
+  box-shadow: 5px 1px 20px black;
+  border-radius: 10px;
+}
+
+.resto-card .resto-info {
+  width: 500px;
+  height: 120px;
+  background-color: rgb(56, 56, 56, 0.4);
+  color: #f5f5f5;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 350px;
+}
+
+.resto-card .resto-info h1,
+h2,
+p {
+  margin: 1px 30px 1px;
+}
+
+.resto-desc {
+  text-align: justify;
+  margin-left: -40px;
+  visibility: hidden;
+  font-size: 20px;
+}
+
+.resto-card:hover {
+  transition: 0.3s;
+  transform: rotate(-2deg);
+}
+
+.resto-card:hover .resto-desc {
+  visibility: visible;
+}
