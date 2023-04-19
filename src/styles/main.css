@@ -1,23 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("./cardlist.css");
 
-/* li, a {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration: none;
-  color: #f7f7f7;
-} */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f5d7d7;
+  background-color: #f3dddd;
 }
 
 header {
@@ -58,6 +52,45 @@ header {
   padding: 10px;
 }
 
+.jumbotron {
+  position: relative;
+  color: #1f1f1f;
+  height: 500px;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.jumbotron .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  background-color: rgba(240, 238, 238, 0.5);
+}
+
+.jumbotron h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.jumbotron p {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .logo {
     width: 90px;
@@ -82,6 +115,8 @@ header {
     background-color: #a3080c;
     transition: 0.5s;
     overflow: hidden;
+    z-index: 99;
+
   }
 
   .navbar.active {
@@ -104,4 +139,15 @@ header {
   .navbar ul li a {
     margin-bottom: 30px;
   }
+
+  .jumbotron h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .jumbotron p {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }  
 }
