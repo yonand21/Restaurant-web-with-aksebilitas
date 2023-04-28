@@ -1,48 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <title>Restaurant Apps Starter Project</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
   </head>
+
   <body>
     <header>
+      <a href="#maincontent" class="skip-link">Menuju ke konten</a>
       <div class="logo">
-        <img class="logo" src="./images/logo.png" alt="Logo" />
+        <img
+          class="logo"
+          src="./images/logo.png"
+          alt="Logo"
+          tabindex="0"
+          aria-label="Logo Website"
+        />
       </div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+
+      <nav class="hamburger">
+        <a
+          href="#"
+          tabindex="0"
+          role="button"
+          aria-label="Klik untuk melihat navigasi web"
+        >
+          <i class="fa fa-regular fa-bars"></i>
+        </a>
+      </nav>
+
       <nav class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Favorite </a></li>
-          <li><a href="https://github.com/yonand21">About Us </a></li>
+          <li>
+            <a
+              href="index.html"
+              aria-label="Kembali ke halaman utama"
+              tabindex="0"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" aria-label="Lihat restoran favorit" tabindex="0"
+              >Favorite
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/yonand21"
+              aria-label="Lihat profil pengembang"
+              tabindex="0"
+              >About Us
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="jumbotron">
-        <img src="./images/heros/hero-image_1.jpg" alt="jumbotron" />
-        <div class="content">
-          <h1>いらしゃいませ</h1>
-          <p>
-            Naruto One Piece Attack on Titan Death Note Dragon Ball Fullmetal
-            Alchemist Yamaha Suzuki Ramen Tempura Okonomiyaki Udon Takoyaki
-            Yakitori Mochi Shabu-shabu Matcha
-          </p>
-        </div>
-      </div>
-      
+      <div class="jumbotron"></div>
       <div class="restaurant-list"></div>
+      <footer></footer>
     </main>
   </body>
 </html>
